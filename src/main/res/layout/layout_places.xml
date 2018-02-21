@@ -1,0 +1,131 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#FFFFCC"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="10dp"
+    card_view:contentPadding="10dp"
+    card_view:layout_scrollInterpolator="@color/colorPrimary">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/adaptorLayout1"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/placeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/typetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/placeTitle"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/detailsButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/butttondrawable"
+                android:elevation="13dp"
+                android:fontFamily="sans-serif"
+                android:text="More Details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/photoButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/photoButton"
+                android:layout_toEndOf="@+id/photoButton" />
+
+            <Button
+                android:id="@+id/photoButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/reviewButton"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/butttondrawable"
+                android:text="Photos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/ratingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typetext"
+
+                android:text="Rating:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/categoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/categoryheadingText"
+                android:text="Category:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/categoryheadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ratingText" />
+
+
+            <Button
+                android:id="@+id/reviewButton"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/categoryText"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/butttondrawable"
+                android:text="Reviews"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

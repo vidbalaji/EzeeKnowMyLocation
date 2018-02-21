@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/clearMarkerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:background="@drawable/butttondrawable"
+        android:onClick="clearMarkersfn"
+        android:text="Clear Markers" />
+
+    <Button
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/butttondrawable"
+        android:clickable="true"
+        android:text="Select Place"
+        app:layout_anchor="@+id/map"
+        app:layout_anchorGravity="top|center_horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="263dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/butttondrawable" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabMode="scrollable">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Places near me" />
+
+
+    </android.support.design.widget.TabLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

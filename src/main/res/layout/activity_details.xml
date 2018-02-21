@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="horizontal|vertical"
+
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/okDetailsButton"
+        android:layout_width="156dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/butttondrawable"
+        android:text="OK" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:isScrollContainer="true"
+        android:scrollbars="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA000">
+
+            <TextView
+                android:id="@+id/placeLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/placeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scrollHorizontally="true"
+                android:text="---\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textIsSelectable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addressLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:text="---\n"
+                android:textIsSelectable="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA000">
+
+            <TextView
+                android:id="@+id/phoneLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:scrollHorizontally="true"
+                android:text="---\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/websiteLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/websiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:scrollHorizontally="true"
+                android:textIsSelectable="true"
+                android:text="---\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA000">
+
+            <TextView
+                android:id="@+id/openingHoursLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Hours:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/openHoursText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:text="---"
+                android:textIsSelectable="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ratingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/ratingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---\n"
+                android:textIsSelectable="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA000">
+
+            <TextView
+                android:id="@+id/categoryLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Type:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/categoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+    </TableLayout>
+</HorizontalScrollView>
+
+</LinearLayout>
